@@ -1,7 +1,25 @@
+
+.hr {
+    background-color: #cfcfcf;
+    width: 90%;
+    height: 3px;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .flex {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
 }
+
 
 .link {
     font-family: "roboto", sans-serif;
@@ -40,13 +58,17 @@
 }
 
 .error {
-    color: brown;
+    color: var(--peach-color) ;
     text-align: center;
     font-family: "roboto",sans-serif;
 
 }
 .error:visited {
-    color: brown;
+    color: var(--peach-color);
+}
+
+.error__page {
+    margin: 500px 0;
 }
 
 .error__page h2 {
@@ -62,4 +84,24 @@
 
 .logo {
     width: 10%;
+}
+
+.link__footer {
+    text-decoration: none;
+    color: black;
+}
+
+.flex__footer {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    background-color: #cfcfcf;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 20px;
 }

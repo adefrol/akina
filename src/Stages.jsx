@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-export default function Exercises() {
+export default function Stages() {
     return (
       
       <div className="iframe">
