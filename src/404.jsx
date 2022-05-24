@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Header.css";
+import "./css/main.css";
 
 export default function Error() {
     return(

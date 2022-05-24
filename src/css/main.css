@@ -1,0 +1,267 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'roboto', sans-serif;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  color: #ffa6a2;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30pt;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+p, a {
+  font-weight: 400;
+  font-family: 'roboto', sans-serif;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-sp-ar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-sp-bw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer {
+  background-color: #cfcfcf;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.hr {
+  background-color: #cfcfcf;
+  width: 90%;
+  height: 3px;
+  margin: 0 auto;
+}
+
+/* Навигация header */
+.link__header {
+  font-family: "roboto", sans-serif;
+  text-decoration: none;
+  -webkit-transition: all 0.5s  ease;
+  transition: all 0.5s  ease;
+  font-size: 20pt;
+  color: black;
+  font-weight: bold;
+}
+
+.link__header:hover {
+  font-size: 24pt;
+  background: linear-gradient(-45deg, #e16640, #ffa871, #fd7462, #ffa6a2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 11s ease infinite;
+          animation: gradient 11s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.link__header:visited {
+  background: linear-gradient(-45deg, #ffb39c, #ffcf9b, #e16f60, #ffa6a2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+}
+
+.logo {
+  width: 10%;
+}
+
+header .flex-sp-ar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 18px 0;
+}
+
+@media screen and (max-width: 1057px) {
+  .logo {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .flex-sp-ar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo {
+    width: 50%;
+    margin-left: 30px;
+  }
+  header .mobile {
+    margin-top: 25px;
+  }
+}
+
+.footer p {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.link__footer {
+  text-decoration: none;
+  color: white;
+}
+
+footer .flex-sp-ar {
+  padding-top: 10px;
+}
+
+.greeting {
+  font-weight: 400;
+  text-align: center;
+  font-size: 17pt;
+}
+
+.akina__headling {
+  font-size: 60pt;
+}
+
+.photo__block {
+  height: 400px;
+  width: 70%;
+  background-color: #ffa6a2;
+  margin: 0 auto;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.mainpage {
+  margin: 100px 0;
+}
+
+.about {
+  text-align: center;
+  max-width: 50%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.about p {
+  margin-top: 10px;
+  font-size: 15pt;
+}
+
+main .flex-sp-ar {
+  margin-top: 100px;
+  font-size: 16pt;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background-color: #ffa6a2;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.error {
+  color: var(--peach-color);
+  text-align: center;
+  font-family: "roboto",sans-serif;
+}
+
+.error:visited {
+  color: var(--peach-color);
+}
+
+.error__page {
+  margin: 500px 0;
+}
+
+.error__page h2 {
+  text-align: center;
+  font-family: "roboto",sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

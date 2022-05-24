@@ -1,0 +1,18 @@
+.error {
+    color: var(--peach-color) ;
+    text-align: center;
+    font-family: "roboto",sans-serif;
+
+}
+.error:visited {
+    color: var(--peach-color);
+}
+
+.error__page {
+    margin: 500px 0;
+}
+
+.error__page h2 {
+    text-align: center;
+    font-family: "roboto",sans-serif;
+}

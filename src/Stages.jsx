@@ -1,5 +1,6 @@
 import React from "react";
-import "./Header.css";
+import "./css/main.css";
+
 export default function Stages() {
     return (
       

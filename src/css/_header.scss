@@ -1,0 +1,78 @@
+.hr {
+    background-color: #cfcfcf;
+    width: 90%;
+    height: 3px;
+    margin: 0 auto;
+}
+
+/* Навигация header */
+
+.link__header {
+    font-family: "roboto", sans-serif;
+    text-decoration: none;
+    transition: all 0.5s  ease;
+    font-size: 20pt;
+    color: black;
+    font-weight: bold;
+}
+
+.link__header:hover {
+    font-size: 24pt;
+    background: linear-gradient(-45deg, #e16640, #ffa871, #fd7462, $main);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: gradient 11s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.link__header:visited {
+    background: linear-gradient(-45deg, #ffb39c, #ffcf9b, #e16f60, $main);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+}
+
+.logo {
+    width: 10%;
+}
+
+header .flex-sp-ar {
+    align-items: center;
+    margin: 18px 0;
+}
+
+@media screen and (max-width:1057px) {
+    .logo {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header .flex-sp-ar {
+        flex-direction: column;
+        
+    }
+    .logo {
+        width: 50%;
+        margin-left: 30px;
+    }
+    header {
+        .mobile {
+            margin-top: 25px;
+        }
+    }
+}

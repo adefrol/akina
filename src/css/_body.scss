@@ -1,28 +1,19 @@
-* {
-    font-family: "roboto", sans-serif;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    --peach-color: #ffa6a2;
-    margin: 0;
-    padding: 0;
-}
+
 
 .greeting {
     font-weight: 400;
     text-align: center;
+    font-size: 17pt;
 }
 
 .akina__headling {
-    font-weight: 900;
-    text-align: center;
     font-size: 60pt;
-    color: var(--peach-color)
 }
 
 .photo__block {
     height:  400px;
     width: 70%;
-    background-color: var(--peach-color);
+    background-color: $main;
     margin: 0 auto;
     border-radius: 50px;
     margin-top: 20px;
@@ -40,28 +31,22 @@
     margin-top: 20px;
 }
 
-.about h2 {
-    text-align: center;
-    font-size: 30pt;
-    color: var(--peach-color);
-}
 
 .about p {
     margin-top: 10px;
     font-size: 15pt;
 }
 
-.mainpage .flex {
+
+main .flex-sp-ar {
     margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
     font-size: 16pt;
 }
 
 .btn {
     text-decoration: none;
     color: white;
-    background-color: var(--peach-color);
+    background-color: $main;
     padding: 10px;
     border-radius: 50px;
 }
