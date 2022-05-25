@@ -17,8 +17,8 @@ export default function Mainpage() {
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam excepturi beatae, modi omnis voluptatem esse veniam quae debitis reprehenderit maiores consectetur! Iusto molestiae suscipit voluptate dolor reiciendis ut reprehenderit cumque vero asperiores, consectetur debitis, tenetur sit aut quo possimus blanditiis. Neque omnis vero sint illo laboriosam culpa voluptatibus voluptates suscipit?</p>
             </div>
             <div className="flex-sp-ar">
-                <Link to="/stages" className="btn">Перейти к этапам</Link>
-                <Link to="/team" className="btn">Перейти к участникам</Link>
+                <Link to="/stages" className="btn__main">Перейти к этапам</Link>
+                <Link to="/team" className="btn__main">Перейти к участникам</Link>
             </div>
         </div>
     );

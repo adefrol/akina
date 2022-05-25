@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import {} from "react-router-dom";
 import "./css/main.css";
+import StageBtn from "./stage-btn";
+
+
 
 export default function Stages() {
-    return (
-      
-      <div className="iframe">
-        
-        <h2>Упражнения</h2>
+    const [btns] = useState([
+        {num: 1},
+        {num: 2},
+        {num: 3},
+    ])
+    
 
-      </div>
+
+
+    return (
+        <div>
+            <h2>Выбор этапа</h2>
+            {btns.map(btn =>
+                <StageBtn btn={btn} key={btn.num}/>)}
+        </div>
     );
-  }
+}

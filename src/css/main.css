@@ -238,7 +238,7 @@ main .flex-sp-ar {
   font-size: 16pt;
 }
 
-.btn {
+.btn__main {
   text-decoration: none;
   color: white;
   background-color: #ffa6a2;
@@ -263,5 +263,10 @@ main .flex-sp-ar {
 .error__page h2 {
   text-align: center;
   font-family: "roboto",sans-serif;
+}
+
+.stage__btn {
+  width: 400px;
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */
