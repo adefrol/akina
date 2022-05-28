@@ -3,8 +3,7 @@ import {
     BrowserRouter,
     Routes,
     Route,
-    Link,
-    Navigate
+    Link
 } from "react-router-dom";
 import "./css/main.css";
 import Stages from "./Stages";
@@ -12,9 +11,12 @@ import Mainpage from "./Mainpage";
 import Team from "./Team";
 import Error from "./404";
 import Stage from "./Stage";
-import Ex from "./Ex"
+import FirstExes from "./FirstExes"
+import SecondExes from "./SecondExes"
+import ThirdExes from "./ThirdExes";
 
 import logo from "./media/team.png";
+
 
 export default function Header() {
     return (
@@ -42,9 +44,10 @@ export default function Header() {
                             <Route path="/team" element={<Team />}></Route>
                             <Route path="/stages" element={<Stages />}></Route>
                             <Route path="/stages/stage-:num" element={<Stage />}></Route>
-                            <Route path="/stages/stage-:num/ex-:num" element={<Ex />}></Route>
-                            <Route path="/404" element={<Error />}></Route>
-                            <Route path="*" element={<Navigate replace to="/404" />} />
+                            <Route path="/stages/stage-1/ex-:num" element={<FirstExes />}></Route>
+                            <Route path="/stages/stage-2/ex-:num" element={<SecondExes />}></Route>
+                            <Route path="/stages/stage-3/ex-:num" element={<ThirdExes />}></Route>
+                            <Route path="*" element={<Error/>} />
                         </Routes>
                     </div>
                 </main>
@@ -63,3 +66,4 @@ export default function Header() {
         </BrowserRouter>
     );
 }
+

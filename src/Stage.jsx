@@ -29,7 +29,7 @@ export default function Stage() {
             { num: 10 }
         ]
     )
-  /*  const [thirdSettings] = useState(
+    const [thirdSettings] = useState(
         [
             { num: 1 },
             { num: 2 },
@@ -37,7 +37,7 @@ export default function Stage() {
             { num: 4 }
         ]
     )
-  */
+
     if (num === "1") {
         return (
             <div>
@@ -52,6 +52,15 @@ export default function Stage() {
             <div>
                 <h2>Выбор этапа</h2>
                 {secondSettings.map(setting =>
+                    <TaskBtn setting={setting} key={setting.num} />)}
+            </div>
+        );
+    }
+    if (num === "3") {
+        return (
+            <div>
+                <h2>Выбор этапа</h2>
+                {thirdSettings.map(setting =>
                     <TaskBtn setting={setting} key={setting.num} />)}
             </div>
         );
