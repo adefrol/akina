@@ -35,6 +35,7 @@ p, a {
           margin-block-start: 0em;
   -webkit-margin-after: 0em;
           margin-block-end: 0em;
+  font-size: 15pt;
 }
 
 .container {
@@ -275,5 +276,57 @@ main .flex-sp-ar {
 .stage__btn {
   width: 400px;
   height: 50px;
+}
+
+.block {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.block p {
+  margin-top: 20px;
+}
+
+.block iframe {
+  margin-top: 20px;
+}
+
+.block img {
+  margin-top: 30px;
+}
+
+.btn {
+  width: 100%;
+  background-color: #ffa6a2;
+  border-radius: 40px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.btn__stage {
+  color: white;
+  text-decoration: none;
+  font-size: 20pt;
+  background-color: #ffa6a2;
+  border-radius: 40px;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.btn__stage:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.stage .flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */

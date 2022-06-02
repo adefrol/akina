@@ -19,9 +19,7 @@ export default function ThirdExes() {
 
     return (
         <div>
-            <h1>Задание {firstStageExes[num - 1].id}</h1>
-            <h1>Формулировка</h1>
-            <p>{firstStageExes[num - 1].formul}</p>
+            <h1>В разработке</h1>
         </div>
     );
 

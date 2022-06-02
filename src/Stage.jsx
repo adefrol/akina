@@ -40,28 +40,35 @@ export default function Stage() {
 
     if (num === "1") {
         return (
-            <div>
-                <h2>Выбор этапа</h2>
-                {firstSettings.map(setting =>
-                    <TaskBtn setting={setting} key={setting.num} />)}
+            <div className="stage">
+                <h2>Выбор задания</h2>
+                <div className="flex">
+                    {firstSettings.map(setting =>
+                        <TaskBtn setting={setting} key={setting.num} />)}
+                </div>
+
             </div>
         );
     }
     if (num === "2") {
         return (
-            <div>
-                <h2>Выбор этапа</h2>
-                {secondSettings.map(setting =>
-                    <TaskBtn setting={setting} key={setting.num} />)}
+            <div className="stage">
+                <h2>Выбор задания</h2>
+                <div className="flex">
+                    {secondSettings.map(setting =>
+                        <TaskBtn setting={setting} key={setting.num} />)}
+                </div>
             </div>
         );
     }
     if (num === "3") {
         return (
-            <div>
-                <h2>Выбор этапа</h2>
-                {thirdSettings.map(setting =>
-                    <TaskBtn setting={setting} key={setting.num} />)}
+            <div className="stage">
+                <h2>Выбор задания</h2>
+                <div className="flex">
+                    {thirdSettings.map(setting =>
+                        <TaskBtn setting={setting} key={setting.num} />)}
+                </div>
             </div>
         );
     }
