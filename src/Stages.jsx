@@ -17,7 +17,7 @@ export default function Stages() {
 
     return (
         <div className="stage">
-            <h2>Выбор этапа</h2>
+            <h1>Выбор этапа</h1>
             <div className="flex">
                 {btns.map(btn =>
                     <StageBtn btn={btn} key={btn.num} />)}

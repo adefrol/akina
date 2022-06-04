@@ -11,12 +11,17 @@
 }
 
 .photo__block {
-    height:  400px;
+    height:  600px;
     width: 70%;
+    background: url('/src/media/main.png') no-repeat;
+    background-size: 663px 746px;
+    background-position: top;
     background-color: $main;
     margin: 0 auto;
     border-radius: 50px;
     margin-top: 20px;
+    box-shadow: 1px 0px 27px 5px rgba(94, 55, 55, 0.32);
+    
 }
 
 .mainpage {
@@ -49,4 +54,10 @@ main .flex-sp-ar {
     background-color: $main;
     padding: 10px;
     border-radius: 50px;
+    box-shadow: 1px 0px 27px 5px rgba(94, 55, 55, 0.15);
+    transition: all 0.2s ease;
+}
+.btn__main:hover {
+    transform: scale(1.1);
+    color: hwb(0 91% 0%);
 }

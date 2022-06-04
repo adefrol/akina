@@ -10,6 +10,7 @@ export default function Mainpage() {
             <div>
                 <p className="greeting">Hello World! Мы команда</p>
                 <h1 className="akina__headling">akina</h1>
+                <p className="greeting">"A Keen IN A TEAM - endless work stream"</p>
             </div>
             <div className="photo__block"></div>
             <div className="about">

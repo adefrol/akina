@@ -104,6 +104,11 @@ html, body {
 }
 
 /* Навигация header */
+.logo__link {
+  display: block;
+  text-align: center;
+}
+
 .link__header {
   font-family: "roboto", sans-serif;
   text-decoration: none;
@@ -115,6 +120,8 @@ html, body {
 }
 
 .link__header:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   font-size: 24pt;
   background: linear-gradient(-45deg, #e16640, #ffa871, #fd7462, #ffa6a2);
   -webkit-background-clip: text;
@@ -158,7 +165,9 @@ html, body {
 }
 
 .logo {
-  width: 10%;
+  width: 40%;
+  display: block;
+  text-align: center;
 }
 
 header .flex-sp-ar {
@@ -216,12 +225,17 @@ footer .flex-sp-ar {
 }
 
 .photo__block {
-  height: 400px;
+  height: 600px;
   width: 70%;
+  background: url("/src/media/main.png") no-repeat;
+  background-size: 663px 746px;
+  background-position: top;
   background-color: #ffa6a2;
   margin: 0 auto;
   border-radius: 50px;
   margin-top: 20px;
+  -webkit-box-shadow: 1px 0px 27px 5px rgba(94, 55, 55, 0.32);
+          box-shadow: 1px 0px 27px 5px rgba(94, 55, 55, 0.32);
 }
 
 .mainpage {
@@ -252,6 +266,16 @@ main .flex-sp-ar {
   background-color: #ffa6a2;
   padding: 10px;
   border-radius: 50px;
+  -webkit-box-shadow: 1px 0px 27px 5px rgba(94, 55, 55, 0.15);
+          box-shadow: 1px 0px 27px 5px rgba(94, 55, 55, 0.15);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.btn__main:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: hwb(0 91% 0%);
 }
 
 .error {
@@ -328,5 +352,142 @@ main .flex-sp-ar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.photo__block__team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+}
+
+.photo__block__team h3 {
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.photo__block__team h3:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.team__link {
+  text-decoration: none;
+}
+
+.team {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.team .flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.team .flex-sp-ar {
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.team .flex-sp-ar:nth-child(1) .photo__block__team {
+  background: url(/src/media/kurbatov_cropped.png) no-repeat;
+  background-color: #ffa6a2;
+  background-size: 200px 374px;
+  background-position: top;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.team .flex-sp-ar:nth-child(1):hover .photo__block__team {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.team .flex-sp-ar:nth-child(3) .photo__block__team {
+  background: url(/src/media/zinkevich_cropped.png) no-repeat;
+  background-color: #ffa6a2;
+  background-size: 200px 323px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-position: top;
+}
+
+.team .flex-sp-ar:nth-child(3):hover .photo__block__team {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.team .flex-sp-ar:nth-child(4) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.team .flex-sp-ar:nth-child(4) .photo__block__team {
+  background: url(/src/media/bogdanovich_cropped.png) no-repeat;
+  background-color: #ffa6a2;
+  background-size: 348px 311px;
+  background-position: top;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.team .flex-sp-ar:nth-child(4):hover .photo__block__team {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.team .flex-sp-ar:nth-child(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.team .flex-sp-ar:nth-child(2) .photo__block__team {
+  background: url(/src/media/kokorina_cropped.png) no-repeat;
+  background-color: #ffa6a2;
+  background-size: 263px 322px;
+  background-position: top;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.team .flex-sp-ar:nth-child(2):hover .photo__block__team {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.team .flex-sp-ar:nth-child(5) .photo__block__team {
+  background: url(/src/media/pikutsky_cropped.png) no-repeat;
+  background-color: #ffa6a2;
+  background-size: 197px 305px;
+  background-position: top;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.team .flex-sp-ar:nth-child(5):hover .photo__block__team {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=main.css.map */

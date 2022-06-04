@@ -16,15 +16,16 @@ import SecondExes from "./SecondExes"
 import ThirdExes from "./ThirdExes";
 
 import logo from "./media/team.png";
+import Member from "./Member";
 
 
-export default function Header() {
+export default function Main() {
     return (
         <BrowserRouter>
             <div className="wrapper">
                 <header className="header">
                     <div className="flex-sp-ar">
-                        <img src={logo} alt="" className="logo" />
+                        <Link to="" className="logo__link"><img src={logo} alt=""  className="logo"/></Link>
                         <div className="mobile">
                             <Link to="" className="link__header">Главная</Link>
                         </div>
@@ -42,6 +43,7 @@ export default function Header() {
                         <Routes>
                             <Route path="/" element={<Mainpage />}></Route>
                             <Route path="/team" element={<Team />}></Route>
+                            <Route path="/team/member-:num" element={<Member/>}></Route>
                             <Route path="/stages" element={<Stages />}></Route>
                             <Route path="/stages/stage-:num" element={<Stage />}></Route>
                             <Route path="/stages/stage-1/ex-:num" element={<FirstExes />}></Route>

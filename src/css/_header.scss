@@ -7,6 +7,11 @@
 
 /* Навигация header */
 
+.logo__link {
+    display: block;
+ text-align: center;
+}
+
 .link__header {
     font-family: "roboto", sans-serif;
     text-decoration: none;
@@ -17,7 +22,9 @@
 }
 
 .link__header:hover {
+    transform: scale(1.2);
     font-size: 24pt;
+    
     background: linear-gradient(-45deg, #e16640, #ffa871, #fd7462, $main);
     -webkit-background-clip: text;
     background-clip: text;
@@ -47,7 +54,9 @@
 }
 
 .logo {
-    width: 10%;
+    width: 40%;
+    display: block;
+    text-align: center;
 }
 
 header .flex-sp-ar {
