@@ -16,11 +16,13 @@ export default function Stages() {
 
 
     return (
-        <div className="stage">
-            <h1>Выбор этапа</h1>
-            <div className="flex">
-                {btns.map(btn =>
-                    <StageBtn btn={btn} key={btn.num} />)}
+        <div className="container">
+            <div className="stage">
+                <h1>Выбор этапа</h1>
+                <div className="flex">
+                    {btns.map(btn =>
+                        <StageBtn btn={btn} key={btn.num} />)}
+                </div>
             </div>
         </div>
     );

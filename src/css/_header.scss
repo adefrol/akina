@@ -1,7 +1,7 @@
 .hr {
-    background-color: #cfcfcf;
+    background: linear-gradient(-90deg, $main, $main-purple);
     width: 90%;
-    height: 3px;
+    height: 6px;
     margin: 0 auto;
 }
 
@@ -9,13 +9,13 @@
 
 .logo__link {
     display: block;
- text-align: center;
+    text-align: center;
 }
 
 .link__header {
     font-family: "roboto", sans-serif;
     text-decoration: none;
-    transition: all 0.5s  ease;
+    transition: all 0.5s ease;
     font-size: 20pt;
     color: black;
     font-weight: bold;
@@ -24,8 +24,8 @@
 .link__header:hover {
     transform: scale(1.2);
     font-size: 24pt;
-    
-    background: linear-gradient(-45deg, #e16640, #ffa871, #fd7462, $main);
+
+    background: linear-gradient(-45deg, $main-purple, $main, $main, $main-purple, $main-purple);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -34,15 +34,17 @@
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .link__header:visited {
@@ -73,12 +75,14 @@ header .flex-sp-ar {
 @media screen and (max-width: 450px) {
     header .flex-sp-ar {
         flex-direction: column;
-        
+
     }
+
     .logo {
         width: 50%;
         margin-left: 30px;
     }
+
     header {
         .mobile {
             margin-top: 25px;

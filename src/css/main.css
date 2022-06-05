@@ -10,7 +10,7 @@ h1, h2, h3, h4 {
           margin-block-start: 0em;
   -webkit-margin-after: 0em;
           margin-block-end: 0em;
-  color: #ffa6a2;
+  color: #aa82ef;
   text-align: center;
 }
 
@@ -28,7 +28,7 @@ h3 {
   font-weight: 500;
 }
 
-p, a {
+p, a, li {
   font-weight: 400;
   font-family: 'roboto', sans-serif;
   -webkit-margin-before: 0em;
@@ -39,7 +39,7 @@ p, a {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1850px;
   width: 100%;
   margin: 0 auto;
 }
@@ -65,6 +65,29 @@ p, a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.download ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download ul a {
+  color: black;
+  text-align: center;
+}
+
+.download ul li {
+  text-align: center;
+  list-style-type: none;
 }
 
 html, body {
@@ -97,9 +120,10 @@ html, body {
 }
 
 .hr {
-  background-color: #cfcfcf;
+  background: -webkit-gradient(linear, right top, left top, from(#ffa6a2), to(#aa82ef));
+  background: linear-gradient(-90deg, #ffa6a2, #aa82ef);
   width: 90%;
-  height: 3px;
+  height: 6px;
   margin: 0 auto;
 }
 
@@ -112,8 +136,8 @@ html, body {
 .link__header {
   font-family: "roboto", sans-serif;
   text-decoration: none;
-  -webkit-transition: all 0.5s  ease;
-  transition: all 0.5s  ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   font-size: 20pt;
   color: black;
   font-weight: bold;
@@ -123,7 +147,7 @@ html, body {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   font-size: 24pt;
-  background: linear-gradient(-45deg, #e16640, #ffa871, #fd7462, #ffa6a2);
+  background: linear-gradient(-45deg, #aa82ef, #ffa6a2, #ffa6a2, #aa82ef, #aa82ef);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -214,6 +238,17 @@ footer .flex-sp-ar {
   padding-top: 10px;
 }
 
+@media (max-width: 450px) {
+  footer .flex-sp-ar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
 .greeting {
   font-weight: 400;
   text-align: center;
@@ -222,20 +257,46 @@ footer .flex-sp-ar {
 
 .akina__headling {
   font-size: 60pt;
+  color: #aa82ef;
 }
 
 .photo__block {
-  height: 600px;
-  width: 70%;
+  height: 100%;
+  width: 100%;
   background: url("/src/media/main.png") no-repeat;
   background-size: 663px 746px;
   background-position: top;
-  background-color: #ffa6a2;
   margin: 0 auto;
   border-radius: 50px;
-  margin-top: 20px;
   -webkit-box-shadow: 1px 0px 27px 5px rgba(94, 55, 55, 0.32);
           box-shadow: 1px 0px 27px 5px rgba(94, 55, 55, 0.32);
+}
+
+.bg {
+  background: linear-gradient(-45deg, #ffa6a2, #aa82ef);
+  height: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg2 {
+  height: 150%;
+  width: 70%;
+  border-radius: 50px;
+  margin: 0 auto;
+  background: linear-gradient(-45deg, #ffa6a2, #aa82ef);
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mainpage {
@@ -248,6 +309,11 @@ footer .flex-sp-ar {
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+.about h2 {
+  color: #aa82ef;
+  text-align: center;
 }
 
 .about p {
@@ -263,7 +329,8 @@ main .flex-sp-ar {
 .btn__main {
   text-decoration: none;
   color: white;
-  background-color: #ffa6a2;
+  background: linear-gradient(-45deg, #ffa6a2, #aa82ef);
+  background-size: 110%;
   padding: 10px;
   border-radius: 50px;
   -webkit-box-shadow: 1px 0px 27px 5px rgba(94, 55, 55, 0.15);
@@ -276,6 +343,32 @@ main .flex-sp-ar {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: hwb(0 91% 0%);
+}
+
+.v-container {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+}
+
+@media (max-width: 450px) {
+  .mainpage .flex-sp-ar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .btn__main {
+    margin: 10px auto;
+    max-width: 80%;
+    width: 100%;
+  }
 }
 
 .error {
@@ -319,6 +412,27 @@ main .flex-sp-ar {
   margin-top: 30px;
 }
 
+.ex {
+  margin: 20px 0;
+}
+
+.ex h1, .ex h2 {
+  color: #aa82ef;
+}
+
+.block:nth-child(3) {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.block:nth-child(3) .ex__item {
+  width: 50%;
+}
+
 .btn {
   width: 100%;
   background-color: #ffa6a2;
@@ -333,18 +447,28 @@ main .flex-sp-ar {
   color: white;
   text-decoration: none;
   font-size: 20pt;
-  background-color: #ffa6a2;
+  background: linear-gradient(-45deg, #ffa6a2, #aa82ef);
   border-radius: 40px;
   width: 70%;
   text-align: center;
   margin: 0 auto;
   margin-top: 30px;
   padding: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn__stage:hover {
+  width: 90%;
 }
 
 .btn__stage:visited {
   color: white;
   text-decoration: none;
+}
+
+.stage {
+  margin: 20px 0;
 }
 
 .stage .flex {
@@ -364,6 +488,8 @@ main .flex-sp-ar {
   width: 300px;
   height: 300px;
   border-radius: 40px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .photo__block__team h3 {
@@ -377,6 +503,11 @@ main .flex-sp-ar {
 .photo__block__team h3:visited {
   color: white;
   text-decoration: none;
+}
+
+.photo__block__team:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .team__link {
@@ -397,6 +528,16 @@ main .flex-sp-ar {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  margin-top: 30px;
+}
+
+.team .flex h1 {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.team .flex h1:hover {
+  font-size: 40pt;
 }
 
 .team .flex-sp-ar {
@@ -409,30 +550,14 @@ main .flex-sp-ar {
 
 .team .flex-sp-ar:nth-child(1) .photo__block__team {
   background: url(/src/media/kurbatov_cropped.png) no-repeat;
-  background-color: #ffa6a2;
   background-size: 200px 374px;
   background-position: top;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.team .flex-sp-ar:nth-child(1):hover .photo__block__team {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .team .flex-sp-ar:nth-child(3) .photo__block__team {
   background: url(/src/media/zinkevich_cropped.png) no-repeat;
-  background-color: #ffa6a2;
   background-size: 200px 323px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   background-position: top;
-}
-
-.team .flex-sp-ar:nth-child(3):hover .photo__block__team {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .team .flex-sp-ar:nth-child(4) {
@@ -444,16 +569,8 @@ main .flex-sp-ar {
 
 .team .flex-sp-ar:nth-child(4) .photo__block__team {
   background: url(/src/media/bogdanovich_cropped.png) no-repeat;
-  background-color: #ffa6a2;
   background-size: 348px 311px;
   background-position: top;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.team .flex-sp-ar:nth-child(4):hover .photo__block__team {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .team .flex-sp-ar:nth-child(2) {
@@ -465,29 +582,111 @@ main .flex-sp-ar {
 
 .team .flex-sp-ar:nth-child(2) .photo__block__team {
   background: url(/src/media/kokorina_cropped.png) no-repeat;
-  background-color: #ffa6a2;
   background-size: 263px 322px;
   background-position: top;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.team .flex-sp-ar:nth-child(2):hover .photo__block__team {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .team .flex-sp-ar:nth-child(5) .photo__block__team {
   background: url(/src/media/pikutsky_cropped.png) no-repeat;
-  background-color: #ffa6a2;
   background-size: 197px 305px;
   background-position: top;
+}
+
+.member {
+  width: 14%;
+  display: block;
+  margin: 40px auto;
+  -webkit-filter: drop-shadow(0px 0px 25px rgba(140, 70, 199, 0.8));
+          filter: drop-shadow(0px 0px 25px rgba(140, 70, 199, 0.8));
+}
+
+.member__page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+}
+
+.member__page p {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.member__page h3 {
+  font-size: 20pt;
+}
+
+.member__page a {
+  color: black;
+}
+
+.member__page .flex-sp-ar {
+  width: 50%;
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+
+.member__page .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.member__page .list__item li {
+  font-size: 20pt;
+}
+
+.member__page .list__item h3 {
+  font-size: 30pt;
+}
+
+.photo__block__teambg {
+  background: -webkit-gradient(linear, right top, left top, from(#ffa6a2), to(#aa82ef));
+  background: linear-gradient(-90deg, #ffa6a2, #aa82ef);
+  background-size: 120%;
+  border-radius: 40px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.team .flex-sp-ar:nth-child(5):hover .photo__block__team {
+.photo__block__teambg:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media (max-width: 450px) {
+  .team .flex-sp-ar h1 {
+    display: none;
+  }
+  .team .flex-sp-ar {
+    margin: 30px 0;
+  }
+  .member__page p {
+    width: 90%;
+  }
+  .member__page .member {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about {
+    max-width: 90%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

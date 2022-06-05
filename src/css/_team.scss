@@ -5,7 +5,7 @@
     width: 300px;
     height: 300px;
     border-radius: 40px;
-
+    transition: all 0.3s ease;
     h3 {
         color: white;
         text-decoration: none;
@@ -19,6 +19,9 @@
         text-decoration: none;
     }
 }
+.photo__block__team:hover {
+    transform: scale(1.1);
+}
 
 .team__link {
     text-decoration: none;
@@ -27,12 +30,23 @@
 .team {
     width: 100%;
     margin: 20px 0;
+    
+    
 
     .flex {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-top: 30px;
+        h1 {
+            transition: all 0.3s ease;
+        }
+    
+        h1:hover {
+            font-size: 40pt;
+        }
     }
+
     .flex-sp-ar {
         width: 50%;
         align-items: center;
@@ -42,80 +56,121 @@
     .flex-sp-ar:nth-child(1) {
         .photo__block__team {
             background: url(/src/media/kurbatov_cropped.png) no-repeat;
-            background-color: $main;
+
             background-size: 200px 374px;
             background-position: top;
-            transition: all 0.3s ease;
         }
+
     }
-    .flex-sp-ar:nth-child(1):hover {
-        .photo__block__team {
-            transform: scale(1.1);
-        }
-    }
+
 
     .flex-sp-ar:nth-child(3) {
         .photo__block__team {
             background: url(/src/media/zinkevich_cropped.png) no-repeat;
-            background-color: $main;
             background-size: 200px 323px;
-            transition: all 0.3s ease;
             background-position: top;
         }
     }
-    .flex-sp-ar:nth-child(3):hover {
-        .photo__block__team {
-            transform: scale(1.1);
-        }
-    }
+
 
     .flex-sp-ar:nth-child(4) {
         .photo__block__team {
             background: url(/src/media/bogdanovich_cropped.png) no-repeat;
-            background-color: $main;
             background-size: 348px 311px;
             background-position: top;
-            transition: all 0.3s ease;
         }
-        flex-direction: row-reverse;
-        
-    }
-    .flex-sp-ar:nth-child(4):hover {
-        .photo__block__team {
-            transform: scale(1.1);
-        }
-    }
 
+        flex-direction: row-reverse;
+
+    }
     .flex-sp-ar:nth-child(2) {
         .photo__block__team {
             background: url(/src/media/kokorina_cropped.png) no-repeat;
-            background-color: $main;
             background-size: 263px 322px;
             background-position: top;
-            transition: all 0.3s ease;
         }
+
         flex-direction: row-reverse;
-    }
-    .flex-sp-ar:nth-child(2):hover {
-        .photo__block__team {
-            transform: scale(1.1);
-        }
     }
 
     .flex-sp-ar:nth-child(5) {
         .photo__block__team {
             background: url(/src/media/pikutsky_cropped.png) no-repeat;
-            background-color: $main;
             background-size: 197px 305px;
             background-position: top;
-            transition: all 0.3s ease;
+
         }
     }
-    .flex-sp-ar:nth-child(5):hover {
-        .photo__block__team {
-            transform: scale(1.1);
+}
+
+.member {
+    width: 14%;
+    display: block;
+    margin: 40px auto;
+    filter: drop-shadow( 0px 0px 25px rgba(140, 70, 199, 0.8));
+}
+
+.member__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    p {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    h3 {
+        font-size: 20pt;
+    }
+    
+
+    a {
+        color: black;
+    }
+    .flex-sp-ar {
+        width: 50%;
+        margin-left: 20px;
+        margin-bottom: 60px;
+    }
+    .list__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+            font-size: 20pt;
         }
+        h3 {
+            font-size: 30pt
+        }
+    }
+}
+
+.photo__block__teambg {
+    background: linear-gradient(-90deg, $main, #aa82ef);
+    background-size: 120%;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+.photo__block__teambg:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:450px) {
+    .team .flex-sp-ar h1 {
+        display: none;
     }
 
-    
+    .team .flex-sp-ar {
+        margin: 30px 0;
+    }
+
+    .member__page {
+        p {
+            width: 90%;
+        }
+        .member {
+            width: 70%;
+        }
+    }
 }

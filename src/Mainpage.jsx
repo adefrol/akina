@@ -2,25 +2,35 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./css/main.css";
 
-
-
 export default function Mainpage() {
     return (
         <div className="mainpage">
-            <div>
-                <p className="greeting">Hello World! Мы команда</p>
-                <h1 className="akina__headling">akina</h1>
-                <p className="greeting">"A Keen IN A TEAM - endless work stream"</p>
+            <div className="container">
+                <div>
+                    <p className="greeting">Hello World! Мы команда</p>
+                    <h1 className="akina__headling">akina</h1>
+                    <p className="greeting">"A Keen IN A TEAM - endless work stream"</p>
+                </div>
             </div>
-            <div className="photo__block"></div>
-            <div className="about">
-                <h2>О нас</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam excepturi beatae, modi omnis voluptatem esse veniam quae debitis reprehenderit maiores consectetur! Iusto molestiae suscipit voluptate dolor reiciendis ut reprehenderit cumque vero asperiores, consectetur debitis, tenetur sit aut quo possimus blanditiis. Neque omnis vero sint illo laboriosam culpa voluptatibus voluptates suscipit?</p>
+            <div className="v-container">
+                <div className="bg">
+                    <div className="bg2">
+                        <div className="photo__block"></div>
+                    </div>
+                </div>
             </div>
-            <div className="flex-sp-ar">
-                <Link to="/stages" className="btn__main">Перейти к этапам</Link>
-                <Link to="/team" className="btn__main">Перейти к участникам</Link>
+            <div className="container">
+
+                <div className="about">
+                    <h2>О нас и нашем приложении</h2>
+                    <p>Привет, мы команда akina, студенты группы 2ИС-20 ГБПОУ Иркутского энергетического колледжа, мы создали приложение для профессиональной длительной образовательной игры "Инженерная мысль ИЭК", в нашем приложении вы можете найти информацию о каждом участнике нашей команды, а также производственные задачи, над которыми мы трудились.</p>
+                </div>
+                <div className="flex-sp-ar">
+                    <Link to="/stages" className="btn__main">Перейти к этапам</Link>
+                    <Link to="/team" className="btn__main">Перейти к участникам</Link>
+                </div>
             </div>
         </div>
+
     );
-  }
+}

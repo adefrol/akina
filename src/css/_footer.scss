@@ -14,3 +14,13 @@
 footer .flex-sp-ar {
     padding-top: 10px;
 }
+
+@media (max-width:450px) {
+    footer .flex-sp-ar {
+        flex-direction: column;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+        
+
+}

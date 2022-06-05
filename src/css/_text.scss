@@ -2,7 +2,9 @@ h1,h2,h3,h4 {
     font-family: 'roboto', sans-serif;
     margin-block-start: 0em;
     margin-block-end: 0em;
-    color: $main;
+    background: linear-gradient(90deg, $main, #aa82ef);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 

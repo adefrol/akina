@@ -13,15 +13,19 @@
     color: white;
     text-decoration: none;
     font-size: 20pt;
-    background-color: $main;
+    background: linear-gradient(-45deg, $main, #aa82ef);
     border-radius: 40px;
     width: 70%;
     text-align: center;
     margin: 0 auto;
     margin-top: 30px;
     padding: 20px;
-    
+    transition: all 0.3s ease;
 
+}
+
+.btn__stage:hover {
+    width: 90%;
 }
 
 .btn__stage:visited {
@@ -33,4 +37,5 @@
     .flex {
         flex-direction: column;
     }
+    margin: 20px 0;
 }

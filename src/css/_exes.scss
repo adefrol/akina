@@ -11,3 +11,19 @@
         margin-top: 30px;
     }
 }
+
+.ex {
+    h1,h2 {
+        color: $main-purple;
+    }
+    margin: 20px 0;
+}
+
+.block:nth-child(3){
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    .ex__item {
+        width: 50%;
+    }
+}

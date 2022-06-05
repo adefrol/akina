@@ -24,3 +24,10 @@ yarn-error.log*
 
 # media
 /src/media/
+
+# htaccess
+
+.htaccess
+
+# download
+/src/download/

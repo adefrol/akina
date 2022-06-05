@@ -17,6 +17,7 @@ import ThirdExes from "./ThirdExes";
 
 import logo from "./media/team.png";
 import Member from "./Member";
+import Download from "./Download";
 
 
 export default function Main() {
@@ -39,8 +40,9 @@ export default function Main() {
                     <div className="hr"></div>
                 </header>
                 <main className="body">
-                    <div className="container">
+                    
                         <Routes>
+                            <Route path="/download" element={<Download />}></Route>
                             <Route path="/" element={<Mainpage />}></Route>
                             <Route path="/team" element={<Team />}></Route>
                             <Route path="/team/member-:num" element={<Member/>}></Route>
@@ -51,7 +53,7 @@ export default function Main() {
                             <Route path="/stages/stage-3/ex-:num" element={<ThirdExes />}></Route>
                             <Route path="*" element={<Error/>} />
                         </Routes>
-                    </div>
+                    
                 </main>
                 <footer className="footer">
                     <div className="container">
@@ -59,9 +61,11 @@ export default function Main() {
                             <Link to="" className="link__footer">Главная</Link>
                             <Link to="/team" className="link__footer">Команда</Link>
                             <Link to="/stages" className="link__footer">Этапы</Link>
+                            <Link to='/download' className="link__footer">Скачивание файлов</Link>
                             <a href="https://github.com/adefrol/akina" className="link__footer">Репозиторий GitHub</a>
                         </div>
-                        <p>akina team ©</p>
+                        <p>AKINA TEAM: Copyright 2022. All Rights Reserved.</p>
+                        <p>Roboto Font Author: Copyright 2011 Google Inc. All Rights Reserved.</p>
                     </div>
                 </footer>
             </div>

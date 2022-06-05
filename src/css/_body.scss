@@ -1,5 +1,3 @@
-
-
 .greeting {
     font-weight: 400;
     text-align: center;
@@ -8,20 +6,38 @@
 
 .akina__headling {
     font-size: 60pt;
+    color: $main-purple;
 }
 
 .photo__block {
-    height:  600px;
-    width: 70%;
+    height: 100%;
+    width: 100%;
     background: url('/src/media/main.png') no-repeat;
     background-size: 663px 746px;
     background-position: top;
-    background-color: $main;
     margin: 0 auto;
     border-radius: 50px;
-    margin-top: 20px;
     box-shadow: 1px 0px 27px 5px rgba(94, 55, 55, 0.32);
-    
+
+}
+
+.bg {
+    background: linear-gradient(-45deg, $main, #aa82ef);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bg2 {
+    height: 150%;
+    width: 70%;
+    border-radius: 50px;
+    margin: 0 auto;
+    background: linear-gradient(-45deg, $main, #aa82ef);
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
 }
 
 .mainpage {
@@ -34,7 +50,17 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 20px;
+
+    h2 {
+        color: $main-purple;
+        text-align: center;
+    }
+
+    
+
+
 }
+
 
 
 .about p {
@@ -51,13 +77,35 @@ main .flex-sp-ar {
 .btn__main {
     text-decoration: none;
     color: white;
-    background-color: $main;
+    background: linear-gradient(-45deg, $main, #aa82ef);
+    background-size: 110%;
     padding: 10px;
     border-radius: 50px;
     box-shadow: 1px 0px 27px 5px rgba(94, 55, 55, 0.15);
     transition: all 0.2s ease;
 }
+
 .btn__main:hover {
     transform: scale(1.1);
     color: hwb(0 91% 0%);
+}
+
+.v-container {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+@media (max-width:450px) {
+    .mainpage .flex-sp-ar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn__main {
+        margin: 10px auto;
+        max-width: 80%;
+        width: 100%;
+    }
+    
 }
