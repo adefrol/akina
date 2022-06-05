@@ -21,7 +21,7 @@
 
 }
 
-.bg {
+.main__bg {
     background: linear-gradient(-45deg, $main, #aa82ef);
     height: 400px;
     width: 100%;
@@ -29,7 +29,7 @@
     align-items: center;
 }
 
-.bg2 {
+.secondary__bg {
     height: 150%;
     width: 70%;
     border-radius: 50px;
@@ -87,7 +87,7 @@ main .flex-sp-ar {
 
 .btn__main:hover {
     transform: scale(1.1);
-    color: hwb(0 91% 0%);
+    font-weight: 500;
 }
 
 .v-container {
@@ -107,5 +107,29 @@ main .flex-sp-ar {
         max-width: 80%;
         width: 100%;
     }
-    
+    .main__bg {
+        height: 300px;
+    }
+
+    .secondary__bg {
+        width: 95%;
+    }
+
+    .photo__block {
+        background-size: 493px 526px;
+    }
+}
+
+@media (max-width:390px) {
+    .main__bg {
+        height: 300px;
+    }
+
+    .secondary__bg {
+        width: 95%;
+    }
+
+    .photo__block {
+        background-size: 443px 476px;
+    }
 }

@@ -26,7 +26,9 @@ export default function Main() {
             <div className="wrapper">
                 <header className="header">
                     <div className="flex-sp-ar">
-                        <Link to="" className="logo__link"><img src={logo} alt=""  className="logo"/></Link>
+                        <div className="mobile">
+                            <Link to="" className="logo__link"><img src={logo} alt="" className="logo" /></Link>
+                        </div>
                         <div className="mobile">
                             <Link to="" className="link__header">Главная</Link>
                         </div>
@@ -40,20 +42,20 @@ export default function Main() {
                     <div className="hr"></div>
                 </header>
                 <main className="body">
-                    
-                        <Routes>
-                            <Route path="/download" element={<Download />}></Route>
-                            <Route path="/" element={<Mainpage />}></Route>
-                            <Route path="/team" element={<Team />}></Route>
-                            <Route path="/team/member-:num" element={<Member/>}></Route>
-                            <Route path="/stages" element={<Stages />}></Route>
-                            <Route path="/stages/stage-:num" element={<Stage />}></Route>
-                            <Route path="/stages/stage-1/ex-:num" element={<FirstExes />}></Route>
-                            <Route path="/stages/stage-2/ex-:num" element={<SecondExes />}></Route>
-                            <Route path="/stages/stage-3/ex-:num" element={<ThirdExes />}></Route>
-                            <Route path="*" element={<Error/>} />
-                        </Routes>
-                    
+
+                    <Routes>
+                        <Route path="/download" element={<Download />}></Route>
+                        <Route path="/" element={<Mainpage />}></Route>
+                        <Route path="/team" element={<Team />}></Route>
+                        <Route path="/team/member-:num" element={<Member />}></Route>
+                        <Route path="/stages" element={<Stages />}></Route>
+                        <Route path="/stages/stage-:num" element={<Stage />}></Route>
+                        <Route path="/stages/stage-1/ex-:num" element={<FirstExes />}></Route>
+                        <Route path="/stages/stage-2/ex-:num" element={<SecondExes />}></Route>
+                        <Route path="/stages/stage-3/ex-:num" element={<ThirdExes />}></Route>
+                        <Route path="*" element={<Error />} />
+                    </Routes>
+
                 </main>
                 <footer className="footer">
                     <div className="container">
@@ -64,8 +66,8 @@ export default function Main() {
                             <Link to='/download' className="link__footer">Скачивание файлов</Link>
                             <a href="https://github.com/adefrol/akina" className="link__footer">Репозиторий GitHub</a>
                         </div>
-                        <p>AKINA TEAM: Copyright 2022. All Rights Reserved.</p>
-                        <p>Roboto Font Author: Copyright 2011 Google Inc. All Rights Reserved.</p>
+                        <p>© AKINA TEAM - since 2021 </p>
+                        <p>Roboto Font Author: Copyright 2011 Google Inc. All Rights Reserved. </p><br />
                     </div>
                 </footer>
             </div>

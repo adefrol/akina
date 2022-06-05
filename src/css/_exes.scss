@@ -1,29 +1,52 @@
 .block {
     margin-top: 10px;
     text-align: center;
+
     p {
         margin-top: 20px;
     }
+
     iframe {
         margin-top: 20px;
     }
+
     img {
         margin-top: 30px;
     }
 }
 
 .ex {
-    h1,h2 {
+
+    h1,
+    h2 {
         color: $main-purple;
     }
+
     margin: 20px 0;
+
 }
 
-.block:nth-child(3){
+.block:nth-child(6) {
+    margin: 50px 0;
+}
+.block:nth-child(3) {
     margin: 50px 0;
     display: flex;
     justify-content: space-around;
+
     .ex__item {
         width: 50%;
     }
+}
+
+@media (max-width:450px) {
+    .block:nth-child(3) {
+        flex-direction: column;
+
+        align-items: center;
+        .ex__item {
+            width: 100%;
+        }
+    }
+    
 }

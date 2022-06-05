@@ -13,8 +13,8 @@ export default function Mainpage() {
                 </div>
             </div>
             <div className="v-container">
-                <div className="bg">
-                    <div className="bg2">
+                <div className="main__bg">
+                    <div className="secondary__bg">
                         <div className="photo__block"></div>
                     </div>
                 </div>

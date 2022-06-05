@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./css/main.css";
 import scheme1_1 from "./media/scheme1_1.png"
 import scheme1_2 from "./media/scheme1_2.png"
@@ -43,6 +44,9 @@ export default function FirstExes() {
                 <div className="block">
                     <h2>Блок-схема</h2>
                     <img src={firstStageExes[num - 1].scheme} alt={"Схема " + num} />
+                </div>
+                <div className="block">
+                    <Link to='/download' className="btn__main">Скачивание задач</Link>
                 </div>
             </div>
         </div>
